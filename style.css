@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+
+
+.wrapper{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rectangle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 35vw;
+    min-width: 300px;
+    max-width: 380px;
+    height: 236px;
+    max-height: 500px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding-bottom: 19px;
+}
+.yellow-line{
+    background-color:  #f1c40f;
+    height: 28px;
+    width: 35vw;
+    min-width: 299px;
+    max-width: 379px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+.to-do-list{
+    text-align: center;
+    width: 20vw;
+    min-width: 176px;
+    height: 34px;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0;
+}
+.arrow-icon{
+    align-self: flex-end;
+    width: 25px;
+    height: 15px;
+    margin-right: 2.5vw;
+    
+}
+.input-bar{
+    width: 30vw;
+    min-width: 255px;
+    max-width: 330px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: #fff;   
+    margin-top: 5px;     
+}
+.input-bar input{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+}
+.input-bar img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+    background: #8A2BE2;
+    width: 150px;
+    height: 42px;
+    border: none;
+    border-radius: 50px;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+}
+.add-icon .plus{
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #A152E6; 
+    cursor: pointer;
+}
+.add-icon .add-text{
+    /* margin-right: 3.4vw; */
+    /* font-weight: 500; */
+    font-size: 14px;
+    margin-left: 20px;
+}
+@media screen and (max-width:900px){
+    .arrow-icon{
+        margin-right: 24px;
+    }
+    /* .add-icon .add-text{
+        margin-right: 25px;
+    } */
+}
+@media screen and (min-width: 1100px) {
+    .arrow-icon{
+        margin-right: 28px;
+    }    
+}
+
+
+
+.task-list{
+    display: none;
+    width: 30vw;
+    min-width: 255px;
+    max-width: 330px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    max-height: 400px;
+}
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0;
+    width: 100%;
+    word-wrap: break-word;
+    border-bottom: 1px solid #eee;
+}
+.task-text{
+    width: 90%;
+}
+.task-item:last-child{
+    border-bottom: none;
+}
+
+.delete-icon-img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.task-input-hidden{
+    display: none
+}
+.task-list-hidden{
+    display: block;
+}
+.task-rectangle{    
+    height: auto;
+}
+.task-item .delete-icon-img{
+    margin-left: 5px;
+}
+
+
+
+/* 
+@media screen and (min-width:320px) and (max-width:600px){
+.rectangle{
+    width: 300px;
+}
+.yellow-line{
+    width: 299px;
+}
+.to-do-list{
+    width: 176px;
+    height: 30px;
+    font-size: 21px;
+}
+.input-bar{
+    width: 255px;
+}.task-list{
+    width: 255px;
+}
+} */
