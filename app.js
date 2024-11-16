@@ -69,7 +69,7 @@ function createTaskList(item, index) {
 }
 
 addTextSign.addEventListener("click", () => {
-    if (inp.value !== "") {
+    if (inp.value.trim() !== "") {
         arr.push(inp.value);
         taskList.innerHTML = "";
         arr.forEach((item, index) => {
