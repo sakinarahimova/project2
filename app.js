@@ -19,10 +19,10 @@ arrowIcon.addEventListener("mouseout", () => {
 
 let removeIcon = document.querySelector(".remove-icon img");
 removeIcon.addEventListener("mouseover", () => {
-    isDown ? removeIcon.src = "./icons/delete-icon-purple.svg" : removeIcon.src = "./icons/delete-icon-grey.svg";
+    removeIcon.src = "./icons/delete-icon-purple.svg"
 });
 removeIcon.addEventListener("mouseout", () => {
-    isDown ? removeIcon.src = "./icons/delete-icon-grey.svg" : removeIcon.src = "./icons/delete-icon-purple.svg";
+    removeIcon.src = "./icons/delete-icon-grey.svg"
 });
 removeIcon.addEventListener("click", () => {
     inp.value = "";
